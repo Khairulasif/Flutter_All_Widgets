@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_all_widget/alertDialogWidget.dart';
 import 'package:flutter_all_widget/alignWidget.dart';
@@ -38,6 +39,37 @@ import 'chipWidget.dart';
 import 'choiceChip.dart';
 import 'circleAvatar.dart';
 import 'circularProgressIndicator.dart';
+import 'clipOvalWidget.dart';
+import 'clipPathWidget.dart';
+import 'clipRRectWidget.dart';
+import 'clipRectWidget.dart';
+import 'closeButtonWidget.dart';
+import 'colorFiltered.dart';
+import 'coloredBox.dart';
+import 'columnWidget.dart';
+import 'constrainedBox.dart';
+import 'containerWidget.dart';
+import 'cupertinoActionSheetAction.dart';
+import 'cupertinoActivityIndicator.dart';
+import 'cupertinoAlertDialog.dart';
+import 'cupertinoApp.dart';
+import 'cupertinoButton.dart';
+import 'cupertinoContextMenu.dart';
+import 'cupertinoDatePicker.dart';
+import 'cupertinoPageRoute.dart';
+import 'cupertinoPageScaffold.dart';
+import 'cupertinoPicker.dart';
+import 'cupertinoPopUpSurface.dart';
+import 'cupertinoScrollbar.dart';
+import 'cupertinoSearchTextField.dart';
+import 'cupertinoSegmentedControl.dart';
+import 'cupertinoSlider.dart';
+import 'cupertinoSlidingSegmentedControl.dart';
+import 'cupertinoSwitch.dart';
+import 'cupertinoTabBar.dart';
+import 'cupertinoTabScaffold.dart';
+import 'cupertinoTextField.dart';
+import 'customPaint.dart';
 import 'mediaQuery_doubleInfinity.dart';
 
 
@@ -52,13 +84,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Widget039(),
+    // return CupertinoApp(
+      home: Widget070(),
       // showSemanticsDebugger: true,
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
+// import 'package:flutter/cupertino.dart';
+// import 'package:flutter/material.dart';
 
 
 
