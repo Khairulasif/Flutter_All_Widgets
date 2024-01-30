@@ -94,6 +94,8 @@ import 'errorWidget.dart';
 import 'expandIconWidget.dart';
 import 'expandedWidget.dart';
 import 'expansionPanelList.dart';
+import 'flatSetup2.dart';
+import 'flatSetupTest.dart';
 import 'mediQueryAndOrientation.dart';
 import 'mediaQuery_doubleInfinity.dart';
 
@@ -110,7 +112,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     // return CupertinoApp(
-      home: Widget094(),
+      home: FlatSetupTest2(),
       // showSemanticsDebugger: true,
       debugShowCheckedModeBanner: false,
     );
