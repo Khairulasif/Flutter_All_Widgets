@@ -16,15 +16,15 @@ class Widget034 extends StatelessWidget {
             child: Container(
               // height: MediaQuery.of(context).size.height / 3,
               // width: MediaQuery.of(context).size.width / 2,
-              // height: MediaQuery.of(context).size.height * 0.3,
-              // width: MediaQuery.of(context).size.width / * 0.4,
-              height: 300,
-              width: 300,
+              height: MediaQuery.of(context).size.height * 0.3,
+              width: MediaQuery.of(context).size.width  * 0.4,
+              // height: 300,
+              // width: 300,
               color: Colors.purple,
               child: Center(
                 child: Container(
-                  width: 200,
-                  height: 200,
+                  // width: 200,
+                  // height: 200,
                   // height: double.infinity,
                   // width: double.infinity,
                   color: Colors.green,
