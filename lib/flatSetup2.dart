@@ -3,12 +3,11 @@ import 'package:flutter/material.dart';
 class FlatSetupTest2 extends StatelessWidget {
   FlatSetupTest2({super.key});
 
-  double fem = 1.0;
 
-  double ffem = 1.0;
 
   final appbar = AppBar(
     backgroundColor: Color(0xfffbf8d3),
+    // backgroundColor: Colors.greenAccent,
     title: Center(
       child: Text(
         "Flat Setup",
@@ -21,6 +20,27 @@ class FlatSetupTest2 extends StatelessWidget {
         ),
       ),
     ),
+    shape: ContinuousRectangleBorder(
+      borderRadius: BorderRadius.only(
+        bottomLeft: Radius.circular(35),
+        bottomRight: Radius.circular(35),
+      ),
+    ),
+    elevation: 4.0,
+    leading: IconButton(
+      icon: Icon(Icons.arrow_back),
+      onPressed: () {
+        // Handle back button press
+      },
+    ),
+    actions: [
+      IconButton(
+        icon: Icon(Icons.menu),
+        onPressed: () {
+          // Handle menu icon press
+        },
+      ),
+    ], // Set the elevation to add a shadow
   );
 
   @override
@@ -43,16 +63,67 @@ class FlatSetupTest2 extends StatelessWidget {
                 Container(
                   child: Text("Number of Flat :"),
                 ),
-                SizedBox(width: 20,),
+                SizedBox(
+                  width: 20,
+                ),
                 Container(
-                    width: 180,
-                    height: 35,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.white)
-                )
+                  width: 180,
+                  height: 35,
+                  child: TextFormField(),
+                ),
               ],
-            )
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  child: Text("Number of Unit :"),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                Container(
+                  width: 180,
+                  height: 35,
+                  child: TextFormField(),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  child: Text("Flat Sequence :"),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                Container(
+                  width: 180,
+                  height: 35,
+                  child: TextFormField(),
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton.icon(
+                  onPressed: () {},
+                  label: Text("Create List"),
+                  icon: Icon(Icons.list),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors
+                        .greenAccent), // Change Colors.blue to the color you want
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
